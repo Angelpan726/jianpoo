@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>事業</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: url('2.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #f3f4f6;
+            margin: 0;
+            padding: 0;
+        }
+        h1, p {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            color: #fff;
+            border-radius: 5px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: white;
+            background-color: rgba(76, 175, 80, 0.8);
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>事業占卜結果</h1>
+    <p id="careerResult">您的事業運勢結果會顯示在此。</p>
+    <a href="index.html" class="button">返回主頁</a>
+
+    <script>
+        // 10 個隨機事業占卜結果
+        const careerResults = [
+            "即將迎來職場上的貴人，給您帶來突破的機會。",
+            "面臨新的挑戰，積極面對將帶來更高的成就。",
+            "努力不懈的成果即將顯現，請耐心等待。",
+            "職場的壓力會有所增加，但這會讓您變得更強。",
+            "未來的日子裡，您將獲得上司的賞識，有升遷的機會。",
+            "需要學會與同事更好地合作，將帶來更多機會。",
+            "如果考慮換工作，這是一個不錯的時間點。",
+            "創意將成為您成功的關鍵，多發揮您的創造力。",
+            "將遇到短暫的瓶頸，但很快就會找到解決之道。",
+            "保持積極心態，您將在職場上創造更多的成就。"
+        ];
+
+        // 隨機選擇一個結果並顯示
+        const randomResult = careerResults[Math.floor(Math.random() * careerResults.length)];
+        document.getElementById("careerResult").textContent = randomResult;
+    </script>
+</body>
+</html>

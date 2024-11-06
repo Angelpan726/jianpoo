@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>愛情</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: url('下載.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #f3f4f6;
+            margin: 0;
+            padding: 0;
+        }
+        h1, p {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            color: #fff;
+            border-radius: 5px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: white;
+            background-color: rgba(255, 105, 180, 0.8);
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>愛情占卜結果</h1>
+    <p id="loveResult"></p>
+    <a href="index.html" class="button">返回主頁</a>
+
+    <script>
+        // 定義10個不同的愛情占卜結果
+        const loveResults = [
+            "您的愛情將遇到一個甜蜜的轉折，請保持樂觀的心態，勇敢追求幸福。",
+            "一段新的浪漫即將出現，請準備迎接美好的改變。",
+            "過去的情感即將癒合，您會找到內心的平靜與新的希望。",
+            "您將遇到一位值得信賴的伴侶，這段感情將帶給您安定感。",
+            "愛情之路或許會遇到挑戰，但這會讓您的感情更加穩固。",
+            "隨著時間的推移，您將更懂得珍惜身邊的重要人。",
+            "新的邂逅會讓您的心跳加速，讓自己敞開心扉吧！",
+            "在愛情中，您將學會包容與理解，這段關係會更加成熟。",
+            "過去的遺憾將釋懷，未來的愛情將充滿美好的可能。",
+            "一個特別的人即將走進您的生活，讓這份愛情自然發展吧。"
+        ];
+
+        // 隨機選擇一個愛情占卜結果並顯示
+        const randomIndex = Math.floor(Math.random() * loveResults.length);
+        document.getElementById("loveResult").textContent = loveResults[randomIndex];
+    </script>
+</body>
+</html>

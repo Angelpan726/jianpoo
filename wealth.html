@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>財富</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: url('6.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #f3f4f6;
+            margin: 0;
+            padding: 0;
+        }
+        h1, p {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            color: #fff;
+            border-radius: 5px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: white;
+            background-color: rgba(255, 157, 0, 0.999);
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>財富占卜結果</h1>
+    <p id="wealthResult"></p>
+    <a href="index.html" class="button">返回主頁</a>
+
+    <script>
+        // 定義10個不同的財富占卜結果
+        const wealthResults = [
+            "未來的投資將帶來可觀的收益，記得做足功課！",
+            "一段意外的財富來源將出現，讓您的財務狀況有了新轉機。",
+            "現在是重新評估開支的好時機，合理規劃能帶來長期收益。",
+            "您的努力將在不久的將來得到回報，財務狀況將逐步改善。",
+            "即將有一個難得的機會出現，請準備好抓住它！",
+            "在未來的日子裡，保持開放的心態將幫助您發現新的財富機會。",
+            "一筆意外的收入將帶來驚喜，讓您更有信心面對未來。",
+            "考慮學習投資知識，這將有助於您的財務自由之路。",
+            "與人合作將會帶來更好的財務前景，尋找志同道合的夥伴吧！",
+            "您將獲得他人的幫助，這將在金錢上給您帶來意外的支持。"
+        ];
+
+        // 隨機選擇一個財富占卜結果並顯示
+        const randomIndex = Math.floor(Math.random() * wealthResults.length);
+        document.getElementById("wealthResult").textContent = wealthResults[randomIndex];
+    </script>
+</body>
+</html>
